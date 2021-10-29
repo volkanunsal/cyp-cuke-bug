@@ -32,7 +32,7 @@ function getConfigurationByFile(file) {
  */
 // eslint-disable-next-line no-unused-vars
 module.exports = async (on, config) => {
-  on('file:preprocessor', parseGherkin);
+  on('file:preprocessor', parseGherkin(config));
   on('task', { parseCSV, testDownloadExists });
   // Accept a configFile value or use development by default
   const file = config.env.configFile || 'prod';

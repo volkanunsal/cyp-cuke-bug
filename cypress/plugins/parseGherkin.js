@@ -7,9 +7,11 @@ const cucumber = require('cypress-cucumber-preprocessor').default;
  *
  * @return {Promise<string>}
  */
-module.exports = function parseGherkin({ projectRoot }) {
-  return cucumber({
-    ...browserify.defaultOptions,
-    typescript: resolve.sync('typescript', { baseDir: projectRoot }),
-  });
+module.exports = (config) => {
+  return () => {
+    return cucumber({
+      ...browserify.defaultOptions,
+      typescript: resolve.sync('typescript', { baseDir: config.projectRoot }),
+    });
+  };
 };
