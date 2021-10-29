@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "commonjs",
+    "lib": ["es2018", "DOM"],
+    "types": [
+      "cypress",
+      "@testing-library/cypress",
+      "cypress-wait-until",
+      "cypress-commands"
+    ],
+    "strict": true,
+    "noEmit": false,
+    "outDir": "./build/cypress",
+    "skipDefaultLibCheck": true
+  },
+  "include": ["cypress/**/*.ts"],
+  "exclude": ["cypress/**/*.spec.ts", "node_modules/cypress-promise/index.d.ts"]
+}
