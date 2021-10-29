@@ -1,0 +1,29 @@
+{
+  "name": "cyp-cuke-bug",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "cypress run --env configFile=dev",
+    "dev:open": "cypress open --env configFile=dev"
+  },
+  "dependencies": {
+    "@cypress/browserify-preprocessor": "^3.0.1",
+    "@testing-library/cypress": "^7.0.6",
+    "@testing-library/jest-dom": "^5.11.4",
+    "babel-polyfill": "^6.26.0",
+    "csv-parse": "^4.16.2",
+    "cypress": "^8.7.0",
+    "cypress-commands": "^2.0.1",
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "cypress-wait-until": "^1.7.1",
+    "fs-extra": "^10.0.0",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^27.0.1",
+    "typescript": "^4.2.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}

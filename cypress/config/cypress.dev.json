@@ -1,0 +1,11 @@
+{
+  "env": {
+    "TAGS": "not @skip",
+    "IS_DEV": true
+  },
+  "baseUrl": "http://localhost:3000/canvas/default",
+  "testFiles": ["**/*.feature", "**/*.spec.ts"],
+  "video": false,
+  "viewportWidth": 1920,
+  "viewportHeight": 1080
+}
